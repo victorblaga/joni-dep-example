@@ -21,7 +21,7 @@ public class ApplicationContainer extends CustomContainer {
     }
 
     public UserRepository userRepository() {
-        return new UserFileRepository(config.getString("args.user_file"));
+        return new UserFileRepository(config.getString("names.users"));
     }
 
     public MainService mainService() {
